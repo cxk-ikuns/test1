@@ -1,1 +1,10 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
+[[redirects]]
+  from = "/api/*"
+  to = "https://74c13e98.r10.cpolar.top/:splat"
+  status = 200
+  force = true
