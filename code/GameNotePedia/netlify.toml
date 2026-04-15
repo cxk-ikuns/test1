@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to ="/code/GameNotePedia/index.html"
   status = 200
 
 [[redirects]]
