@@ -12,13 +12,13 @@ export default defineConfig({
     },
   },
   //解决跨境问题，即后端给的接口，转为前端接口来使用
- server: {
-  proxy: {
-    '/api': {
-      target: 'https://326529b4.r18.vip.cpolar.cn',
-      changeOrigin: true,
-      rewrite: (path) => path.replace(/^\/api/, '')
-    }
-  }
-}
+//  server: {
+//   proxy: {
+//     '/api': {
+//       target: 'https://326529b4.r18.vip.cpolar.cn',
+//       changeOrigin: true,
+//       rewrite: (path) => path.replace(/^\/api/, '')
+//     }
+//   }
+// }
 })
