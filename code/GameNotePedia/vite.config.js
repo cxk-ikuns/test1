@@ -15,7 +15,7 @@ export default defineConfig({
  server: {
   proxy: {
     '/api': {
-      target: 'https://326529b4.r18.vip.cpolar.cn',
+      target: 'https://74c13e98.r10.cpolar.top',
       changeOrigin: true,
       rewrite: (path) => path.replace(/^\/api/, '')
     }
