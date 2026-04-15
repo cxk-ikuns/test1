@@ -14,7 +14,7 @@
         </div>
         <!-- 登录与用户信息 -->
         <div class="flex-box">
-            <el-button >登录</el-button>
+            <el-button @click="handleLogin">登录</el-button>
             <el-avatar :src="iconUrl"></el-avatar>
             <p>用户名</p>
            <el-icon><ArrowDown/></el-icon>
@@ -22,7 +22,12 @@
     </div>
 </template>
 <script setup>
+import { useRouter } from 'vue-router'
+const router = useRouter()
 const iconUrl=new URL('/头像.jpg',import.meta.url).href
+const handleLogin=()=>{
+    router.push('/user-message/login')
+}
 </script>
 <style lang="scss">
 .navbar {
